@@ -67,6 +67,7 @@ baoyu_f <- baoyudat %>% group_by(age) %>% filter(sex == "F")
 baoyu_i <- baoyudat %>% group_by(age) %>% filter(sex == "I")
 
 ###Export into csv files
+write.csv(baoyudat, "C:/Users/J/Documents/College/Master in Data Science/Sem 1/WQD7004 Programming in Data Science/Group assignment/baoyudat.csv", row.names = FALSE)
 write.csv(baoyu_m, "C:/Users/J/Documents/College/Master in Data Science/Sem 1/WQD7004 Programming in Data Science/Group assignment/baoyu_m.csv", row.names = FALSE)
 write.csv(baoyu_f, "C:/Users/J/Documents/College/Master in Data Science/Sem 1/WQD7004 Programming in Data Science/Group assignment/baoyu_f.csv", row.names = FALSE)
 write.csv(baoyu_i, "C:/Users/J/Documents/College/Master in Data Science/Sem 1/WQD7004 Programming in Data Science/Group assignment/baoyu_i.csv", row.names = FALSE)
